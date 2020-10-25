@@ -64,6 +64,32 @@
   },
   {
     "id": "3",
+    "type": "action.devices.types.LIGHT",
+    "traits": [
+      "action.devices.traits.OnOff"
+    ],
+    "name": {
+      "defaultNames": [
+        "Light 3"
+      ],
+      "name": "Lampe",
+      "nicknames": [
+        "Lampe basique"
+      ]
+    },
+    "deviceInfo": {
+      "manufacturer": "Gérald LEBAN",
+      "model": "ESP Simple Light",
+      "hwVersion": "1.0",
+      "swVersion": "1.0"
+    },
+    "willReportState": true,
+    "attributes": {
+      "commandOnlyOnOff": false
+    }
+  },
+  {
+    "id": "4",
     "type": "action.devices.types.FAN",
     "traits": [
       "action.devices.traits.FanSpeed",
@@ -122,7 +148,7 @@
     }
   },
   {
-    "id": "4",
+    "id": "5",
     "type": "action.devices.types.THERMOSTAT",
     "traits": [
       "action.devices.traits.TemperatureSetting"
@@ -151,7 +177,7 @@
     }
   },
   {
-    "id": "5",
+    "id": "6",
     "type": "action.devices.types.THERMOSTAT",
     "traits": [
       "action.devices.traits.TemperatureSetting"
@@ -178,7 +204,7 @@
     }
   },
   {
-    "id": "6",
+    "id": "7",
     "type": "action.devices.types.SWITCH",
     "traits": [
       "action.devices.traits.OnOff"
@@ -204,141 +230,26 @@
     }
   },
   {
-    "id": "7",
-    "type": "action.devices.types.LIGHT",
+    "id":  8,
+    "type": "action.devices.types.CURTAIN",
     "traits": [
-      "action.devices.traits.OnOff",
-      "action.devices.traits.Brightness",
-      "action.devices.traits.ColorSetting",
-      "action.devices.traits.Modes"
+      "action.devices.traits.OpenClose"
     ],
     "name": {
-      "defaultNames": [
-        "My Test Light3"
-      ],
-      "name": "Light 3",
-      "nicknames": [
-        "Mood light"
-      ]
+      "name": "Curtain 1"
     },
     "deviceInfo": {
-      "manufacturer": "Siddhy Co",
-      "model": "Siddhys RGB Bulb Mode",
-      "hwVersion": "2.0",
-      "swVersion": "2.0.0"
+      "manufacturer": "Gérald LEBAN",
+      "model": "Curtain V1",
+      "hwVersion": "1.0",
+      "swVersion": "1.0"
     },
     "willReportState": true,
     "attributes": {
-      "availableModes": [
-        {
-          "name": "Mood",
-          "name_values": [
-            {
-              "name_synonym": [
-                "mood",
-                "feeling"
-              ],
-              "lang": "en"
-            }
-          ],
-          "settings": [
-            {
-              "setting_name": "Blank",
-              "setting_values": [
-                {
-                  "setting_synonym": [
-                    "null",
-                    "nothing"
-                  ],
-                  "lang": "en"
-                }
-              ]
-            },
-            {
-              "setting_name": "Happy",
-              "setting_values": [
-                {
-                  "setting_synonym": [
-                    "happy",
-                    "cheerful"
-                  ],
-                  "lang": "en"
-                }
-              ]
-            },
-            {
-              "setting_name": "Sad",
-              "setting_values": [
-                {
-                  "setting_synonym": [
-                    "sad",
-                    "unhappy"
-                  ],
-                  "lang": "en"
-                }
-              ]
-            },
-            {
-              "setting_name": "Angry",
-              "setting_values": [
-                {
-                  "setting_synonym": [
-                    "angry",
-                    "annoyed"
-                  ],
-                  "lang": "en"
-                }
-              ]
-            },
-            {
-              "setting_name": "Party",
-              "setting_values": [
-                {
-                  "setting_synonym": [
-                    "party",
-                    "dance"
-                  ],
-                  "lang": "en"
-                }
-              ]
-            },
-            {
-              "setting_name": "Anxious",
-              "setting_values": [
-                {
-                  "setting_synonym": [
-                    "anxious mood",
-                    "anxiety"
-                  ],
-                  "lang": "en"
-                }
-              ]
-            },
-            {
-              "setting_name": "Busy",
-              "setting_values": [
-                {
-                  "setting_synonym": [
-                    "busy mood",
-                    "busy",
-                    "at work"
-                  ],
-                  "lang": "en"
-                }
-              ]
-            }
-          ],
-          "ordered": true
-        }
-      ],
-      "commandOnlyOnOff": false,
-      "commandOnlyBrightness": false,
-      "commandOnlyModes": false,
-      "colorModel": "rgb",
-      "colorTemperatureRange": {
-        "temperatureMinK": 2000,
-        "temperatureMaxK": 6500
-      }
+      "openDirection": [
+        "LEFT",
+        "RIGHT"
+      ]
     }
   }
 ]
