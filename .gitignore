@@ -16,3 +16,6 @@ firebase.json
 
 # Server
 **/functions/index.js
+
+# Notes
+*.notes
