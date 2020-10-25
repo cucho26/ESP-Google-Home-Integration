@@ -41,10 +41,21 @@ When you link your account to *Gérald IOT* you will access the following device
 
 - Plug/Switch.
 
+## Changelogs
+
 
 ## Future devices
-More devices will be added if requested
+I'll try to add the following devices
+ - [Curtain](https://developers.google.com/assistant/smarthome/guides/curtain)
+ - [Door Locker](https://developers.google.com/assistant/smarthome/guides/door)
+ - [Lock](https://developers.google.com/assistant/smarthome/guides/lock)
+ - [Outlet](https://developers.google.com/assistant/smarthome/guides/outlet)
+ - [Pet Feeder](https://developers.google.com/assistant/smarthome/guides/petfeeder)
+ - [Radiator](https://developers.google.com/assistant/smarthome/guides/radiator)
+ - [Sensor](https://developers.google.com/assistant/smarthome/guides/sensor)
+ - [Smoke Detector](https://developers.google.com/assistant/smarthome/guides/smoke_detector)
+ - [TV](https://developers.google.com/assistant/smarthome/guides/tv)
+ - []()
 
-
-## Notes
+## Notes0
 I am currently waiting for Google Home approval to allow my services world wide
