@@ -13,6 +13,7 @@ smart-home-key.json
 # Firebase Crendentials
 database.rules.json
 firebase.json
+*.hpp
 
 # Server
 **/functions/index.js
