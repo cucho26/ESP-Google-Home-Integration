@@ -5,12 +5,17 @@ A Project to demonstrate full compatibility with Google Home without IFTTT or an
 ## How to link your account to *Gérald IOT*
 
 1. Opened the Google Home app
-1. Click on the plus sign at the top left hand corner
+1. Click on the plus sign at the top left-hand corner
 1. Click configure device
 1. Click on Link Service
 1. Search for Gérald IoT
 1. You're good to go. Enjoy !!
 
+## How to control ESP chips with Google Home
+1. Copy one of the code [there](Arduino%20Code)
+1. Copy [the header file](Arduino%20Code/Credentials.h) to one of the sketch you want to use
+1. Compile the sketch
+1. Enjoy !!
 
 ## Compatible devices
 When you link your account to *Gérald IOT* you will access the following devices
