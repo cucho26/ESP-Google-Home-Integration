@@ -4,6 +4,7 @@
 #include <ESP8266WebServer.h>
 #include <WiFiManager.h>
 #include <EEPROM.h>
+#include "Credentials.h"
 
 //Pin is set for Wemos. If using any other board, change it accordingly.
 #define SWITCH_PIN D4
@@ -13,11 +14,9 @@
 #define OnOff_Address Start_Address + sizeof(int)
 
 //Firebase Database URL and KEY
-#define FIREBASE_DATABASE_URL "ENTER YOUR FIREBASE DATABASE URL HERE"
-#define FIREBASE_KEY "ENTER YOUR FIREBASE KEY HERE"
 
 //Set the ID to the device id used in the index.json file
-static const String STRMDEVID =  "6";
+static const String STRMDEVID =  "3";
 
 //Variables for OnOffvalue
 bool OnOffvalue;
@@ -67,4 +66,3 @@ void loop() {
     }
   }
 }
-
