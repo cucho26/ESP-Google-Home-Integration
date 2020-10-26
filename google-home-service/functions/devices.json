@@ -8,13 +8,7 @@
       "action.devices.traits.ColorSetting"
     ],
     "name": {
-      "defaultNames": [
-        "Light 1"
-      ],
-      "name": "Lampe RGBW",
-      "nicknames": [
-        "Lampe RGBW"
-      ]
+      "name": "RGB Lamp"
     },
     "deviceInfo": {
       "manufacturer": "Gérald LEBAN",
@@ -42,13 +36,7 @@
       "action.devices.traits.Brightness"
     ],
     "name": {
-      "defaultNames": [
-        "Light 2"
-      ],
-      "name": "Lampe",
-      "nicknames": [
-        "Lampe basique"
-      ]
+      "name": "Dimming Light"
     },
     "deviceInfo": {
       "manufacturer": "Gérald LEBAN",
@@ -69,13 +57,7 @@
       "action.devices.traits.OnOff"
     ],
     "name": {
-      "defaultNames": [
-        "Light 3"
-      ],
-      "name": "Lampe",
-      "nicknames": [
-        "Lampe basique"
-      ]
+      "name": "On/Off Lamp"
     },
     "deviceInfo": {
       "manufacturer": "Gérald LEBAN",
@@ -96,13 +78,7 @@
       "action.devices.traits.OnOff"
     ],
     "name": {
-      "defaultNames": [
-        "My Fan"
-      ],
-      "name": "Fan1",
-      "nicknames": [
-        "Ventilateur"
-      ]
+      "name": "Fan"
     },
     "deviceInfo": {
       "manufacturer": "Gérald LEBAN",
@@ -154,23 +130,17 @@
       "action.devices.traits.TemperatureSetting"
     ],
     "name": {
-      "defaultNames": [
-        "Temp Control"
-      ],
-      "name": "Temperature Controller ",
-      "nicknames": [
-        "Thermal Controller"
-      ]
+      "name": "Temperature Controller"
     },
     "deviceInfo": {
-      "manufacturer": "Siddhy Co",
-      "model": "Siddhys Thermostat",
+      "manufacturer": "Gérald LEBAN",
+      "model": "Thermostat",
       "hwVersion": "4.0",
       "swVersion": "5.0.1"
     },
     "willReportState": true,
     "attributes": {
-      "availableThermostatModes": "off,on,heat,cool,heatcool",
+      "availableThermostatModes": "off,on,heat",
       "queryOnlyTemperatureSetting": false,
       "thermostatTemperatureUnit": "C",
       "commandOnlyTemperatureSetting": false
@@ -183,17 +153,11 @@
       "action.devices.traits.TemperatureSetting"
     ],
     "name": {
-      "defaultNames": [
-        "Temp Sensor"
-      ],
-      "name": "Room Temperature Sensor",
-      "nicknames": [
-        "Ambient Temperature Sensor"
-      ]
+      "name": "Room Temperature Sensor"
     },
     "deviceInfo": {
-      "manufacturer": "Siddhy Co",
-      "model": "Siddhys Temperature Sensor",
+      "manufacturer": "Gérald LEBAN",
+      "model": "Capteur de température",
       "hwVersion": "5.0",
       "swVersion": "6.0.1"
     },
@@ -210,13 +174,7 @@
       "action.devices.traits.OnOff"
     ],
     "name": {
-      "defaultNames": [
-        "Plug Socket"
-      ],
-      "name": "Smart Switch",
-      "nicknames": [
-        "New Switch"
-      ]
+      "name": "Smart Switch"
     },
     "deviceInfo": {
       "manufacturer": "Siddhy Co",
@@ -230,19 +188,13 @@
     }
   },
   {
-    "id":  8,
+    "id": "8",
     "type": "action.devices.types.CURTAIN",
     "traits": [
       "action.devices.traits.OpenClose"
     ],
     "name": {
-      "name": "Curtain 1"
-    },
-    "deviceInfo": {
-      "manufacturer": "Gérald LEBAN",
-      "model": "Curtain V1",
-      "hwVersion": "1.0",
-      "swVersion": "1.0"
+      "name": "Simple curtain"
     },
     "willReportState": true,
     "attributes": {
@@ -250,6 +202,30 @@
         "LEFT",
         "RIGHT"
       ]
+    },
+    "deviceInfo": {
+      "manufacturer": "Gérald LEBAN",
+      "model": "hs1234",
+      "hwVersion": "3.2",
+      "swVersion": "11.4"
+    }
+  },
+  {
+    "id": "9",
+    "type": "action.devices.types.DOOR",
+    "traits": [
+      "action.devices.traits.LockUnlock",
+      "action.devices.traits.OpenClose"
+    ],
+    "name": {
+      "name": "Simple door"
+    },
+    "willReportState": true,
+    "deviceInfo": {
+      "manufacturer": "smart-home-inc",
+      "model": "hs1234",
+      "hwVersion": "3.2",
+      "swVersion": "11.4"
     }
   }
 ]
