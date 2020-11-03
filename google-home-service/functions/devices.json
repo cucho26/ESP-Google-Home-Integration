@@ -8,11 +8,11 @@
       "action.devices.traits.ColorSetting"
     ],
     "name": {
-      "name": "RGB Lamp"
+      "name": "NeoPixels"
     },
     "deviceInfo": {
       "manufacturer": "Gérald LEBAN",
-      "model": "ESP RGBW Lamp",
+      "model": "Lampe RGB",
       "hwVersion": "1.0",
       "swVersion": "1.0"
     },
@@ -36,11 +36,11 @@
       "action.devices.traits.Brightness"
     ],
     "name": {
-      "name": "Dimming Light"
+      "name": "White Lamp"
     },
     "deviceInfo": {
       "manufacturer": "Gérald LEBAN",
-      "model": "ESP Dimming Light",
+      "model": "white lamp",
       "hwVersion": "1.0",
       "swVersion": "1.0"
     },
@@ -52,39 +52,19 @@
   },
   {
     "id": "3",
-    "type": "action.devices.types.LIGHT",
-    "traits": [
-      "action.devices.traits.OnOff"
-    ],
-    "name": {
-      "name": "On/Off Lamp"
-    },
-    "deviceInfo": {
-      "manufacturer": "Gérald LEBAN",
-      "model": "ESP Simple Light",
-      "hwVersion": "1.0",
-      "swVersion": "1.0"
-    },
-    "willReportState": true,
-    "attributes": {
-      "commandOnlyOnOff": false
-    }
-  },
-  {
-    "id": "4",
     "type": "action.devices.types.FAN",
     "traits": [
       "action.devices.traits.FanSpeed",
       "action.devices.traits.OnOff"
     ],
     "name": {
-      "name": "Fan"
+      "name": "Ceiling Fan"
     },
     "deviceInfo": {
       "manufacturer": "Gérald LEBAN",
-      "model": "Simple Fan",
-      "hwVersion": "3.0",
-      "swVersion": "4.0.1"
+      "model": "Ceiling Fan",
+      "hwVersion": "1.0",
+      "swVersion": "1.0"
     },
     "willReportState": true,
     "attributes": {
@@ -130,36 +110,13 @@
       "action.devices.traits.TemperatureSetting"
     ],
     "name": {
-      "name": "Temperature Controller"
-    },
-    "deviceInfo": {
-      "manufacturer": "Gérald LEBAN",
-      "model": "Thermostat",
-      "hwVersion": "4.0",
-      "swVersion": "5.0.1"
-    },
-    "willReportState": true,
-    "attributes": {
-      "availableThermostatModes": "off,on,heat",
-      "queryOnlyTemperatureSetting": false,
-      "thermostatTemperatureUnit": "C",
-      "commandOnlyTemperatureSetting": false
-    }
-  },
-  {
-    "id": "6",
-    "type": "action.devices.types.THERMOSTAT",
-    "traits": [
-      "action.devices.traits.TemperatureSetting"
-    ],
-    "name": {
-      "name": "Room Temperature Sensor"
+      "name": "Capteur de température ambiante"
     },
     "deviceInfo": {
       "manufacturer": "Gérald LEBAN",
       "model": "Capteur de température",
-      "hwVersion": "5.0",
-      "swVersion": "6.0.1"
+      "hwVersion": "1.0",
+      "swVersion": "1.0"
     },
     "willReportState": true,
     "attributes": {
@@ -168,7 +125,7 @@
     }
   },
   {
-    "id": "7",
+    "id": "6",
     "type": "action.devices.types.SWITCH",
     "traits": [
       "action.devices.traits.OnOff"
@@ -177,10 +134,10 @@
       "name": "Smart Switch"
     },
     "deviceInfo": {
-      "manufacturer": "Siddhy Co",
-      "model": "Siddhys On/Off Switch",
-      "hwVersion": "6.0",
-      "swVersion": "7.0.1"
+      "manufacturer": "Gérald LEBAN",
+      "model": "On/Off Switch",
+      "hwVersion": "1.0",
+      "swVersion": "1.0"
     },
     "willReportState": true,
     "attributes": {
@@ -188,44 +145,37 @@
     }
   },
   {
-    "id": "8",
-    "type": "action.devices.types.CURTAIN",
+    "id": "1000",
+    "type": "action.devices.types.CARBON_MONOXIDE_DETECTOR",
     "traits": [
-      "action.devices.traits.OpenClose"
+      "action.devices.traits.SensorState"
     ],
     "name": {
-      "name": "Simple curtain"
+      "name": "Simple carbon monoxide detector"
     },
     "willReportState": true,
     "attributes": {
-      "openDirection": [
-        "LEFT",
-        "RIGHT"
+      "sensorStatesSupported": [
+        {
+          "name": "CarbonMonoxideLevel",
+          "descriptiveCapabilities": {
+            "availableStates": [
+              "carbon monoxide detected",
+              "high",
+              "no carbon monoxide detected"
+            ]
+          },
+          "numericCapabilities": {
+            "rawValueUnit": "PARTS_PER_MILLION"
+          }
+        }
       ]
     },
     "deviceInfo": {
       "manufacturer": "Gérald LEBAN",
-      "model": "hs1234",
-      "hwVersion": "3.2",
-      "swVersion": "11.4"
-    }
-  },
-  {
-    "id": "9",
-    "type": "action.devices.types.DOOR",
-    "traits": [
-      "action.devices.traits.LockUnlock",
-      "action.devices.traits.OpenClose"
-    ],
-    "name": {
-      "name": "Simple door"
-    },
-    "willReportState": true,
-    "deviceInfo": {
-      "manufacturer": "smart-home-inc",
-      "model": "hs1234",
-      "hwVersion": "3.2",
-      "swVersion": "11.4"
+      "model": "MONOXIDE DETECTOR",
+      "hwVersion": "1.0",
+      "swVersion": "1.0"
     }
   }
 ]
