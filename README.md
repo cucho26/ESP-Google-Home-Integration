@@ -46,6 +46,11 @@ When you link your account to *Gérald IOT* you will access the following device
 
 - Plug/Switch.
 
+## Deprecated devices
+It seems that Google Home deprecated the following
+1. Doors
+1. Curtains
+
 ## Changelogs
 
 
